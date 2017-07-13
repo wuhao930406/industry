@@ -18,7 +18,7 @@ module.exports = {
     vendor: [
       'react',
     ],
-    index: './index.jsx',
+    index: './client.js',
   },
   output: {
     path: PATHS.PROD,
@@ -89,11 +89,11 @@ module.exports = {
     },
     {
       test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-      use: 'file-loader?limit=1024&name=assets/font/[name].[ext]',
+      use: 'file-loader?limit=1024&name=public/font/[name].[ext]',
     },
     {
       test: /\.(jpg|jpeg|png|gif)$/,
-      use: 'url-loader?mimetype=image/png&name=assets/img/[name]-[hash:6].[ext]',
+      use: 'url-loader?mimetype=image/png&name=public/img/[name]-[hash:6].[ext]',
     },
     ],
   },
