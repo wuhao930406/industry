@@ -1,8 +1,12 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import "_reset.css";
+@import "_SignInUp.css";
+
+
+html {
+    // width: 1500px;
+    font-size: 10rem;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"SimSun";
 }
