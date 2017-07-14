@@ -8,9 +8,9 @@ var _appRoot = require('./app-root');
 
 var _appRoot2 = _interopRequireDefault(_appRoot);
 
-var _signInUp = require('./signInUp');
+var _SignInUp = require('./SignInUp');
 
-var _signInUp2 = _interopRequireDefault(_signInUp);
+var _SignInUp2 = _interopRequireDefault(_SignInUp);
 
 var _list = require('./list');
 
@@ -29,9 +29,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var routes = [{ component: _appRoot2.default,
   routes: [{ path: '/',
     exact: true,
-    component: _signInUp2.default
+    component: _SignInUp2.default
   }, { path: '/home',
-    component: _signInUp2.default
+    component: _SignInUp2.default
   }, { path: '/list',
     component: _listtousers2.default
   }, { path: '/users',
@@ -41,5 +41,5 @@ var routes = [{ component: _appRoot2.default,
     component: _notfound2.default
   }]
 }];
-
+// import SignIn from './SignIn';
 exports.default = routes;
