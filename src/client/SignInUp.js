@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 // import '../../style/_SignInUp.scss';
 // import SignIn from './SignIn.jsx';
-const SignIn = require('./SignIn.jsx');
+// const SignIn = require('./SignIn.jsx');
+
+require('../../public/stylesheets/_test.scss');
 
 export default class SignInUp extends Component {
     constructor() {

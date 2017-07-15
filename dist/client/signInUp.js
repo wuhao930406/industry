@@ -21,6 +21,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // import '../../style/_SignInUp.scss';
 // import SignIn from './SignIn.jsx';
 // const SignIn = require('./SignIn.jsx');
+if (window) {
+    console.log(window);
+    require('../../public/stylesheets/_test.scss');
+}
 
 var SignInUp = function (_Component) {
     _inherits(SignInUp, _Component);
@@ -201,7 +205,11 @@ var SignInUp = function (_Component) {
                             boxItems
                         )
                     ),
-                    _react2.default.createElement('div', { className: 'right-wrapper' })
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'right-wrapper' },
+                        _react2.default.createElement(SignIn, null)
+                    )
                 ),
                 _react2.default.createElement(
                     'div',
