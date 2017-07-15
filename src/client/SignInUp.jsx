@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 // import '../../style/_SignInUp.scss';
 // import SignIn from './SignIn.jsx';
 // const SignIn = require('./SignIn.jsx');
+// import SignUp from './SignUp.jsx';
 
-require('../../public/stylesheets/_test.scss');
+// require('../../public/stylesheets/_test.scss');
 
 export default class SignInUp extends Component {
     constructor() {
@@ -153,7 +154,6 @@ export default class SignInUp extends Component {
                   </div>
                 </div>
                 <div className="right-wrapper">
-                  <SignIn />
                 </div>
               </div>
               <div className="footbar">

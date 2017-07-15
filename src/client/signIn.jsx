@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import '../../style/_SignIn.scss';
+// import '../../public/stylesheets/_SignIn.scss';
 
 export default class SignIn extends Component {
     constructor() {
@@ -12,8 +12,8 @@ export default class SignIn extends Component {
           <div className="signin-wrapper ">
               <h1 className="subject">会员登录</h1>
                 <form>
-                  <input className="sign-name" type="text" name="name" />
-                  <input className="sign-pwd" type="password" name="password" />
+                  <input className="signin-name" type="text" name="name" />
+                  <input className="signin-pwd" type="password" name="password" />
                   <div className="findback-wrapper">
                     <label className="autologin">
                       <input type="checkbox" name="autologin" />1周内自动登录
