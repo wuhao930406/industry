@@ -153,8 +153,7 @@ export default class SignInUp extends Component {
                     {boxItems}
                   </div>
                 </div>
-                <div className="right-wrapper">
-                </div>
+                <div className="right-wrapper"></div>
               </div>
               <div className="footbar">
                 <ul className="menu-wrapper">

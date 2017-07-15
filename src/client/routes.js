@@ -1,15 +1,15 @@
-require('require-ensure');
+// require('require-ensure');
 import AppRoot from './app-root';
-// import SignInUp from './SignInUp';
-const SignInUp = require('./SignInUp');
+import SignInUp from './SignInUp';
+// const SignInUp = require('./SignInUp');
 // import SignIn from './SignIn';
 import List from './list';
 import NotFound from './notfound';
 import ListToUsers from './listtousers';
 
-function loadRoute(cb) {
-    return (module) => cb(null, module.default);
-}
+// function loadRoute(cb) {
+//     return (module) => cb(null, module.default);
+// }
 
 // const SignInUp = () => require('./SignInUp');
 // const SignInUp = (location, cb) => {

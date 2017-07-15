@@ -18,63 +18,58 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// import '../../public/stylesheets/_SignIn.scss';
+// import '../../public/stylesheets/_SignUp.scss';
 
-var SignIn = function (_Component) {
-  _inherits(SignIn, _Component);
+var SignUp = function (_Component) {
+  _inherits(SignUp, _Component);
 
-  function SignIn() {
-    _classCallCheck(this, SignIn);
+  function SignUp() {
+    _classCallCheck(this, SignUp);
 
-    var _this = _possibleConstructorReturn(this, (SignIn.__proto__ || Object.getPrototypeOf(SignIn)).call(this));
+    var _this = _possibleConstructorReturn(this, (SignUp.__proto__ || Object.getPrototypeOf(SignUp)).call(this));
 
     _this.state = {};
     return _this;
   }
 
-  _createClass(SignIn, [{
+  _createClass(SignUp, [{
     key: "render",
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "signin-wrapper " },
+        { className: "signup-wrapper " },
         _react2.default.createElement(
           "h1",
           { className: "subject" },
-          "\u4F1A\u5458\u767B\u5F55"
+          "\u4F1A\u5458\u6CE8\u518C"
         ),
         _react2.default.createElement(
           "form",
           null,
-          _react2.default.createElement("input", { className: "signin-name", type: "text", name: "name" }),
-          _react2.default.createElement("input", { className: "signin-pwd", type: "password", name: "password" }),
+          _react2.default.createElement("input", { className: "signup-phone", type: "text", name: "phone", placeholder: "\u8BF7\u8F93\u5165\u624B\u673A" }),
+          _react2.default.createElement("input", { className: "signup-pwd", type: "password", name: "password", placeholder: "\u8BF7\u8F93\u5165\u5BC6\u7801" }),
           _react2.default.createElement(
             "div",
-            { className: "findback-wrapper" },
+            { className: "requestpin-wrapper" },
+            _react2.default.createElement("input", { className: "setpin", type: "text", name: "pin", placeholder: "\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801" }),
             _react2.default.createElement(
-              "label",
-              { className: "autologin" },
-              _react2.default.createElement("input", { type: "checkbox", name: "autologin" }),
-              "1\u5468\u5185\u81EA\u52A8\u767B\u5F55"
-            ),
-            _react2.default.createElement(
-              "span",
-              { className: "findback" },
-              "\u627E\u56DE\u5BC6\u7801\uFF1F"
+              "div",
+              { className: "requestpin" },
+              "\u83B7\u53D6\u624B\u673A\u9A8C\u8BC1\u7801"
             )
           ),
-          _react2.default.createElement("input", { className: "signin", type: "submit", value: "\u767B\u5F55" }),
+          _react2.default.createElement("input", { className: "signup", type: "submit", value: "\u6CE8\u518C" }),
           _react2.default.createElement(
             "p",
-            { className: "go-signup" },
-            "\u6CA1\u6709\u8D26\u53F7\uFF1F\u514D\u8D39\u6CE8\u518C"
+            { className: "go-signin" },
+            "\u7ACB\u5373\u767B\u9646"
           )
         )
       );
     }
   }]);
 
-  return SignIn;
+  return SignUp;
 }(_react.Component);
 
-exports.default = SignIn;
+exports.default = SignUp;
